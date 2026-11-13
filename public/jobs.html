@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>TalentFlow - Jobs</title>
+
+<link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+<div class="sidebar">
+
+<h2><img src="logo.png" alt="" class="logo"> TalentFlow</h2>
+
+<a href="index.html">⌂ Dashboard</a>
+<a href="candi.html">♙ Candidates</a>
+
+<a href="jobs.html" class="active">
+▣ Jobs
+</a>
+
+<a href="interviews.html">▦ Interviews</a>
+<a href="offers.html">▤ Offers</a>
+<a href="onboarding.html">⚙ Onboarding</a>
+
+</div>
+
+
+
+<div class="main">
+
+<h1>Jobs</h1>
+
+<p>Create and manage job vacancies.</p>
+
+
+<div class="top">
+
+<button onclick="showJobForm()">
++ Create Job
+</button>
+
+</div>
+
+
+<div id="jobForm" class="form-box hidden">
+
+<h2>Create Job</h2>
+
+<input
+id="jobTitle"
+placeholder="Job Title">
+
+
+<input
+id="department"
+placeholder="Department">
+
+
+<input
+id="location"
+placeholder="Location">
+
+
+<select id="jobType">
+
+<option>Full Time</option>
+
+<option>Part Time</option>
+
+<option>Internship</option>
+
+</select>
+
+
+<button onclick="addJob()">
+Create Job
+</button>
+
+</div>
+
+
+
+<div class="table-box">
+
+<h2>Job Vacancies</h2>
+
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Job Title</th>
+<th>Department</th>
+<th>Location</th>
+<th>Type</th>
+<th>Status</th>
+<th>Action</th>
+
+</tr>
+
+</thead>
+
+
+<tbody id="jobList"></tbody>
+
+</table>
+
+</div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
