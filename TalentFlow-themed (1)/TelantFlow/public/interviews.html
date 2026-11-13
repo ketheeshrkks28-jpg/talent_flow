@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>TalentFlow - Interviews</title>
+
+<link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<div class="sidebar">
+
+<h2><img src="logo.png" alt="" class="logo"> TalentFlow</h2>
+
+<a href="index.html">⌂ Dashboard</a>
+<a href="candi.html">♙ Candidates</a>
+<a href="jobs.html">▣ Jobs</a>
+
+<a href="interviews.html" class="active">
+▦ Interviews
+</a>
+
+<a href="offers.html">▤ Offers</a>
+<a href="onboarding.html">⚙ Onboarding</a>
+
+</div>
+
+
+<div class="main">
+
+<h1>Interviews</h1>
+
+<p>Schedule and manage candidate interviews.</p>
+
+
+<button onclick="showInterviewForm()">
++ Schedule Interview
+</button>
+
+
+<div id="interviewForm"
+class="form-box hidden">
+
+<h2>Schedule Interview</h2>
+
+<input
+id="interviewCandidate"
+placeholder="Candidate Name">
+
+
+<input
+id="interviewRole"
+placeholder="Job Role">
+
+
+<input
+id="interviewDate"
+type="date">
+
+
+<input
+id="interviewTime"
+type="time">
+
+
+<input
+id="interviewer"
+placeholder="Interviewer Name">
+
+
+<button onclick="addInterview()">
+Schedule
+</button>
+
+</div>
+
+
+<div class="table-box">
+
+<h2>Interview Schedule</h2>
+
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Candidate</th>
+<th>Role</th>
+<th>Date</th>
+<th>Time</th>
+<th>Interviewer</th>
+<th>Status</th>
+<th>Action</th>
+
+</tr>
+
+</thead>
+
+
+<tbody id="interviewList"></tbody>
+
+</table>
+
+</div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

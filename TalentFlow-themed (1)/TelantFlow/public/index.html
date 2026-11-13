@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <style>
+      span {
+        color: white;
+      }
+
+      .header{
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        margin-bottom: 35px;
+
+        .logotext{
+
+            h2{
+                margin: 0px;
+            }
+
+            p{
+                font-size: 11px;
+            }
+        }
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>TalentFlow Dashboard</title>
+
+    <link rel="icon" href="logo.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="sidebar">
+      <div class="header">
+        <img src="logo.png" alt="" class="logo" />
+        <div class="logotext">
+          <h2><span>Talent</span>Flow</h2>
+          <p>Recruitment Management System</p>
+        </div>
+      </div>
+
+      <a href="index.html" class="active">⌂ Dashboard</a>
+      <a href="candi.html">♙ Candidates</a>
+      <a href="jobs.html">▣ Jobs</a>
+      <a href="interviews.html">▦ Interviews</a>
+      <a href="offers.html">▤ Offers</a>
+      <a href="onboarding.html">⚙ Onboarding</a>
+    </div>
+
+    <div class="main">
+      <h1>Dashboard</h1>
+
+      <p>Recruitment Management System</p>
+
+      <div class="cards">
+        <div class="card blue">
+          <h3>Total Candidates</h3>
+
+          <h1 id="candidateCount">0</h1>
+        </div>
+
+        <div class="card green">
+          <h3>Open Jobs</h3>
+
+          <h1 id="jobCount">0</h1>
+        </div>
+
+        <div class="card yellow">
+          <h3>Interviews</h3>
+
+          <h1 id="interviewCount">0</h1>
+        </div>
+
+        <div class="card purple">
+          <h3>Offers</h3>
+
+          <h1 id="offerCount">0</h1>
+        </div>
+      </div>
+
+      <div class="table-box">
+        <h2>Recruitment Overview</h2>
+
+        <p>
+          TalentFlow helps HR teams manage candidates, jobs, interviews, offers
+          and onboarding from one place.
+        </p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

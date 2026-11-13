@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>TalentFlow - Candidates</title>
+
+<link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<div class="sidebar">
+
+<h2><img src="logo.png" alt="" class="logo"> TalentFlow</h2>
+
+<a href="index.html">⌂ Dashboard</a>
+
+<a href="candi.html" class="active">
+♙ Candidates
+</a>
+
+<a href="jobs.html">▣ Jobs</a>
+
+<a href="interviews.html">▦ Interviews</a>
+
+<a href="offers.html">▤ Offers</a>
+
+<a href="onboarding.html">⚙ Onboarding</a>
+
+</div>
+
+
+
+<div class="main">
+
+<h1>Candidates</h1>
+
+<p>Manage and track all job applicants.</p>
+
+
+
+<div class="top">
+
+<input
+type="text"
+id="search"
+placeholder="Search candidates..."
+onkeyup="searchCandidates()">
+
+
+<button onclick="showCandidateForm()">
++ Add Candidate
+</button>
+
+</div>
+
+
+
+<div id="candidateForm"
+class="form-box hidden">
+
+<h2>Add Candidate</h2>
+
+
+<input
+id="candidateName"
+type="text"
+placeholder="Candidate Name">
+
+
+<input
+id="candidateEmail"
+type="email"
+placeholder="Email">
+
+
+<input
+id="candidateRole"
+type="text"
+placeholder="Job Role">
+
+
+<select id="candidateStatus">
+
+<option value="Applied">Applied</option>
+
+<option value="Interview">Interview</option>
+
+<option value="Selected">Selected</option>
+
+<option value="Rejected">Rejected</option>
+
+</select>
+
+
+<button onclick="addCandidate()">
+Save Candidate
+</button>
+
+</div>
+
+
+
+<div class="cards">
+
+<div class="card blue">
+
+<h3>Total Candidates</h3>
+
+<h1 id="total">0</h1>
+
+</div>
+
+
+<div class="card green">
+
+<h3>Selected</h3>
+
+<h1 id="selectedCount">0</h1>
+
+</div>
+
+
+<div class="card yellow">
+
+<h3>Interview</h3>
+
+<h1 id="interviewCandidates">0</h1>
+
+</div>
+
+</div>
+
+
+
+<div class="table-box">
+
+<h2>Candidate List</h2>
+
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Name</th>
+
+<th>Email</th>
+
+<th>Job Role</th>
+
+<th>Status</th>
+
+<th>Action</th>
+
+</tr>
+
+</thead>
+
+
+<tbody id="candidateList">
+
+</tbody>
+
+</table>
+
+</div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
