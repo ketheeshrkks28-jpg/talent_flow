@@ -1,8 +1,9 @@
 const http = require("http");
 const fs = require("fs");
 const path = require("path");
+require('dotenv').config();
 
-const PORT = 3001;
+const PORT = process.env.PORT || 3001;
 
 const publicFolder = path.join(__dirname, "public");
 const dataFile = path.join(__dirname, "data.json");
