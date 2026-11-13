@@ -1,0 +1,15 @@
+{
+  "name": "talent-flow",
+  "version": "1.0.0",
+  "description": "TalentFlow Recruitment Management Platform",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
